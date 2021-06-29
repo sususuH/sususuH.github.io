@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives: 2021/1 | 俗俗俗的个人博客</title>
+  <title>12 Java数组01 | 俗俗俗的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="俗俗俗的个人博客">
-<meta property="og:url" content="http://example.com/archives/2021/01/index.html">
+  <meta name="description" content="数组的创建">
+<meta property="og:type" content="article">
+<meta property="og:title" content="12 Java数组01">
+<meta property="og:url" content="http://example.com/2021/06/29/12%20Java%E6%95%B0%E7%BB%8401/index.html">
 <meta property="og:site_name" content="俗俗俗的个人博客">
+<meta property="og:description" content="数组的创建">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-06-29T07:17:42.000Z">
+<meta property="article:modified_time" content="2021-06-29T07:19:45.506Z">
 <meta property="article:author" content="俗俗俗">
 <meta name="twitter:card" content="summary">
   
@@ -159,49 +163,213 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-12 Java数组01" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/01/18/0%20%E6%9B%B4%E6%96%B0%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2021-01-18T06:54:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-18</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/01/18/0%20%E6%9B%B4%E6%96%B0%E5%8D%9A%E5%AE%A2/">0 更新博客</a>
+    <h1 class="article-title" itemprop="name">
+      12 Java数组01
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
+        
+        <a href="/2021/06/29/12%20Java%E6%95%B0%E7%BB%8401/" class="archive-article-date">
+  	<time datetime="2021-06-29T07:17:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-06-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="数组的创建"><a href="#数组的创建" class="headerlink" title="数组的创建"></a>数组的创建<a id="more"></a></h2><p>​        使用new操作符来创建数组:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dataType[] arrayRefVar = <span class="keyword">new</span> dataType[arraySize]</span><br></pre></td></tr></table></figure>
+<p>​        数组的元素是通过索引访问的，数组索引从0开始。<br>​        获取数组的长度：<strong>数组名.length</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ArrayDemo01</span> </span>&#123;</span><br><span class="line">	<span class="comment">//变量的类型 变量的名字   =   变量的值;</span></span><br><span class="line">	<span class="comment">//数组类型</span></span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span>[] nums;          <span class="comment">//1.声明一个数组</span></span><br><span class="line">		nums = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">10</span>];   <span class="comment">//2.创建一个数组</span></span><br><span class="line"></span><br><span class="line">		<span class="comment">//3.给数组元素赋值</span></span><br><span class="line">		nums[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">		nums[<span class="number">1</span>] = <span class="number">2</span>;</span><br><span class="line">		nums[<span class="number">2</span>] = <span class="number">3</span>;</span><br><span class="line">		nums[<span class="number">3</span>] = <span class="number">4</span>;</span><br><span class="line">		nums[<span class="number">4</span>] = <span class="number">5</span>;</span><br><span class="line">		nums[<span class="number">5</span>] = <span class="number">6</span>;</span><br><span class="line">		nums[<span class="number">6</span>] = <span class="number">7</span>;</span><br><span class="line">		nums[<span class="number">7</span>] = <span class="number">8</span>;</span><br><span class="line">		nums[<span class="number">8</span>] = <span class="number">9</span>;</span><br><span class="line">		nums[<span class="number">9</span>] = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i : nums) &#123;</span><br><span class="line">			System.out.print(i + <span class="string">&quot;\t&quot;</span>); <span class="comment">//查看数组所有的数</span></span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println();</span><br><span class="line">		<span class="comment">//计算所有元素的和</span></span><br><span class="line">		<span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">		<span class="comment">//获取数组的长度 nums.length</span></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">			sum += nums[i];</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(<span class="string">&quot;总和为：&quot;</span> + sum);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><ul>
+<li><p>静态初始化</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//静态初始化:创建+赋值</span></span><br><span class="line"><span class="keyword">int</span>[] a = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>&#125;;</span><br><span class="line">System.out.println(a[<span class="number">0</span>]);</span><br></pre></td></tr></table></figure></li>
+<li><p>动态初始化</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//动态初始化</span></span><br><span class="line"><span class="keyword">int</span>[] b = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">10</span>];</span><br><span class="line">b[<span class="number">0</span>] = <span class="number">10</span>;</span><br><span class="line">System.out.println(b[<span class="number">0</span>]);</span><br></pre></td></tr></table></figure></li>
+<li><p>数组的默认初始化</p>
+<p>数组是引用类型，它的元素相当于类的实例变量，因此数组一经分配空间，其中的每个元素也被按照实例变量同样的方式被隐式初始化。</p>
+</li>
+</ul>
+<h2 id="数组边界"><a href="#数组边界" class="headerlink" title="数组边界"></a>数组边界</h2><ul>
+<li><p>下标的合法区间：[0，length-1 ]，如果越界就会报错；</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span>[] a=<span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">2</span>];</span><br><span class="line">    System.out.println(a[<span class="number">2</span>]);	<span class="comment">//越界会报错。</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p><strong>ArrayIndexOutOfBoundsException:数组下标越界异常</strong></p>
+</li>
+<li><p>小结：</p>
+<ul>
+<li>数组是相同数据类型(数据类型可以为任意类型)的有序集合。</li>
+<li>数组也是对象。数组元素相当于对象的成员变量。</li>
+<li>数组长度是确定的，不可变的。如果越界，则报：ArrayIndexOutOfBounds</li>
+</ul>
+</li>
+</ul>
 
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/wechat.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/06/29/12%20Java%E6%95%B0%E7%BB%8401/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2021/06/29/13%20Java%E6%95%B0%E7%BB%8402/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          13 Java数组02
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2021/06/29/11%20Java%E6%96%B9%E6%B3%9502/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">11 Java方法02</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E7%9A%84%E5%88%9B%E5%BB%BA"><span class="toc-number">1.</span> <span class="toc-text">数组的创建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-number">2.</span> <span class="toc-text">初始化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E8%BE%B9%E7%95%8C"><span class="toc-number">3.</span> <span class="toc-text">数组边界</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -224,8 +392,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
